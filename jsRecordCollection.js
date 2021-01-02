@@ -1,4 +1,4 @@
-
+// Setup
 var collection = {
   2548: {
     albumTitle: 'Slippery When Wet',
@@ -19,15 +19,21 @@ var collection = {
   }
 };
 
-
+// Only change code below this line
 function updateRecords(object, id, prop, value) {
-  if (prop !== 'tracks' && value !== "") {
+  if (prop !== 'tracks' && value !==""){
     object[id][prop] = value;
-  } else if (prop === "tracks" && !object[id].hasOwnProperty("tracks")) {
+  }
+
+  else if (prop === 'tracks' && !object[id].hasOwnProperty('tracks')){
     object[id][prop] = [value];
-  } else if (prop === "tracks" && value !== "") {
-    object[id][prop].push(value);
-  } else if (value === "") {
+  }
+
+  else if (prop === 'tracks' && value !== "") {
+    object[id][prop].push(value)
+  }
+
+  else if (value === "") {
     delete object[id][prop];
   }
   return object;
