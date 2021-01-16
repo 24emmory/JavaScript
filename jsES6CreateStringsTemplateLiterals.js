@@ -9,10 +9,9 @@ const result = {
   
     const failureItems = [];
   
-    for (var i=0; i < result.failure.length; i++) {
-      const app=`'<li class="text-warning">${result.failure[i]}</li>',
-      `
-      failureItems.push(app);
+    for (var i=0; i < arr.length; i++) {
+      
+      failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
     }
   
     // Only change code above this line
