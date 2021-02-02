@@ -1,0 +1,19 @@
+//getting back into the swing of things, doing a review over
+//past exercises.
+
+//One thing I want to make a point of remembering is that
+//the let keyword creates distinct different variables
+//within the loops you create them in. example:
+
+let printNumTwo;
+for (let i = 0; i < 3; i++) {
+    if (i === 2) {
+        printNumTwo = function() {
+            return i;
+        };
+    }
+}
+
+//Four distinct i variables are created [0,1,2,3,4]
+//and interact with the code seperately within this scope
+//per the let keyword
